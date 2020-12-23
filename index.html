@@ -5,7 +5,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style/main.css" rel="stylesheet">
-        
+
+        <!--responsividade-->
+        <link rel="stylesheet" href="style/responsive.css">
+
+        <!--owl css-->
+        <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
     </head>
     <body>
     <header>
@@ -25,23 +31,76 @@
             <div class="container">
                 <h3 class="titulo">A MENINA QUE ROUBAVA LIVROS</h3>
                 <p class="descricao">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi enim nunc faucibus a pellentesque sit amet porttitor eget. Turpis egestas pretium aenean pharetra magna ac.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-            </div>
-            <div class="botoes">
-                <button role="button" class="botao">
-                    <i class="fas fa-play"></i>
-                    ASSISTIR AGORA
-                </button>
+            
+                <div class="botoes">
+                    <a href="https://www.youtube.com/watch?v=J24AlOYHpVU" target="blanck">
+                        <button role="button" class="botao">
+                            <i class="fas fa-play"></i>
+                            ASSISTIR AGORA 
+                        </button>
+                     </a>
                 <button  role="button" class="botao">
                     <i class="fas fa-info-circle"></i>
-                    MAIS INFORMAÇÕES
+                    
+                    <div class="popup" onclick="myFunction()">MAIS INFORMAÇÕES
+                        <span class="popuptext" id="myPopup">
+                            roin ornare volutpat tortor eget tincidunt. Cras fermentum neque in mauris ultricies eleifend. Fusce congue, mi vitae lobortis vehicula, purus mi pretium justo, ullamcorper luctus turpis risus vulputate libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam sapien risus, congue id consectetur ac, viverra nec urna. Suspendisse tristique ipsum risus, sit amet maximus odio consectetur in. Nam ut urna ut tellus aliquet rhoncus. Morbi bibendum felis mauris, sed sollicitudin massa aliquet sed. Vestibulum auctor vel urna eu volutpat. Nullam gravida ante ut dui dapibus pellentesque at vitae ex. Donec eleifend felis at quam ornare consequat. Integer in leo eleifend, hendrerit erat nec, gravida felis. Curabitur eget suscipit augue, id commodo urna. Nunc tristique sapien vel nisl porta, a viverra odio molestie. Maecenas non dui dolor. Praesent maximus hendrerit nulla.
+                        </span>
+                    </div>
                 </button>
             </div>
-           
-
+        </div>
         </div>
     </main>
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/mini1.jpg" alt="">    
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini2.jpg" alt="">    
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini3.jpg" alt="">    
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini4.jpg" alt="">    
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini5.jpg" alt="">    
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini6.jpg" alt="">    
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini7.jpg" alt="">    
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini8.jpg" alt="">    
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini9.jpg" alt="">    
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini10.jpg" alt="">    
+            </div>
+
+
+        </div>
+    </div>
     <script src="https://kit.fontawesome.com/86034feae6.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script>
+        // When the user clicks on <div>, open the popup
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+        </script>
+
     </body>
 </html>
